@@ -1,0 +1,42 @@
+{
+        "clusterip" : "10.175.182.165",
+        "upg_oam_ip" : "10.170.11.106",
+        "user" : "root",
+        "psd" : "root000",
+        "user360user" : "admin",
+        "user360psd" : "admin",
+        "cudb_system" : [
+                {
+                        "cudb_name" : "CUDB_11",
+                        "cudb_oam_vip" : "10.170.18.123",
+                        "cudb_psd" : "root000",
+                        "node_id" : "11"
+                },
+                {
+                        "cudb_name" : "CUDB_22",
+                        "cudb_oam_vip" : "10.170.18.124",
+                        "cudb_psd" : "root000",
+                        "node_id" : "22"
+                },
+                {
+                        "cudb_name" : "CUDB_33",
+                        "cudb_oam_vip" : "10.170.18.125",
+                        "cudb_psd" : "root000",
+                        "node_id" : "33"
+                },
+                {
+                        "cudb_name" : "CUDB_44",
+                        "cudb_oam_vip" : "10.170.18.126",
+                        "cudb_psd" : "root000",
+                        "node_id" : "44"
+                }
+
+
+        ],
+        "upg_sc" : ["SC-1","SC-2"],
+        "upg_pl" : ["PL-3","PL-4"],
+        "dsgs" : ["DSG0","DSG2"],
+        "dsg_port":["15001","15011","15021","15031"],
+        "dsg_host":["10.170.18.123","10.170.18.123","10.170.18.125","10.170.18.125"],
+        "initial_load_estimated_time": 7200
+}

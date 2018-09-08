@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<steer>
+    <outputFolderPath>/var/data_analytic/report/output/</outputFolderPath>
+    <type>csv</type>
+    <reports>
+        <report>
+            <name>TEST_USER360CLI_USER_EPS_EpsDynInf</name>
+            <sql>select * from USER_EPS_EpsDynInf limit 10000</sql>
+        </report>
+        <report>
+            <name>TEST_USER360CLI_USER_EPS_EpsDynInf1</name>
+            <sql>select * from USER_EPS_EpsDynInf limit 10000</sql>
+        </report>
+        <report>
+            <name>TEST_USER360CLI_USER_EPS_EpsDynInf2</name>
+            <sql>select * from USER_EPS_EpsDynInf limit 10000</sql>
+        </report>
+        <report>
+            <name>TEST_USER360CLI_USER_EPS_EpsDynInf3</name>
+            <sql>select * from USER_EPS_EpsDynInf limit 10000</sql>
+        </report>
+        <report>
+            <name>TEST_USER360CLI_USER_EPS_EpsDynInf4</name>
+            <sql>select * from USER_EPS_EpsDynInf limit 10000</sql>
+        </report>
+        <report>
+            <name>TEST_USER360CLI_USER_EPS_EpsDynInf5</name>
+            <sql>select * from USER_EPS_EpsDynInf limit 10000</sql>
+        </report>
+        <report>
+            <name>TEST_USER360CLI_USER_EPS_EpsDynInf6</name>
+            <sql>select * from USER_EPS_EpsDynInf limit 10000</sql>
+        </report>
+        <report>
+            <name>TEST_USER360CLI_USER_EPS_EpsDynInf7</name>
+            <sql>select * from USER_EPS_EpsDynInf limit 10000</sql>
+        </report>
+        <report>
+            <name>TEST_USER360CLI_USER_EPS_EpsDynInf8</name>
+            <sql>select * from USER_EPS_EpsDynInf limit 10000</sql>
+        </report>
+        <report>
+            <name>TEST_USER360CLI_USER_EPS_EpsDynInf9</name>
+            <sql>select * from USER_EPS_EpsDynInf limit 10000</sql>
+        </report>
+        <report>
+            <name>TEST_USER360CLI_USER_EPS_EpsDynInf10</name>
+            <sql>select * from USER_EPS_EpsDynInf limit 10000</sql>
+        </report>
+        <report>
+            <name>TEST_USER360CLI_USER_EPS_EpsDynInf11</name>
+            <sql>select * from USER_EPS_EpsDynInf limit 10000</sql>
+        </report>
+        <report>
+            <name>TEST_USER360CLI_USER_EPS_EpsDynInf12</name>
+            <sql>select * from mscIdentities as t join USER_EPS_EpsDynInf as t1 on t.MSISDN=t1.MSISDN left join  USER_CSPS_Barrings as t2 on t1.MSISDN=t2.MSISDN left join  USER_CSPS_CallForwarding as t3 on t1.MSISDN=t3.MSISDN left join USER_CSPS_SupplementaryServices as t4 on t1.MSISDN=t4.MSISDN left join USER_CSPS_Subscription as t5 on t1.MSISDN=t5.MSISDN</sql>
+        </report>
+    </reports>
+</steer>

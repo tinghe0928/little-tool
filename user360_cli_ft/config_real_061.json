@@ -1,0 +1,28 @@
+{
+	"clusterip" : "10.175.182.165",
+	"upg_oam_ip" : "10.170.11.106",
+	"user" : "root",
+	"psd" : "root000",
+	"user360user" : "admin",
+	"user360psd" : "admin",
+	"cudb_system" : [
+		{
+			"cudb_name" : "CUDB_21",
+			"cudb_oam_vip" : "10.170.22.245",
+			"cudb_psd" : "ericsson",
+			"node_id" : "21"
+		},
+		{
+			"cudb_name" : "CUDB_22",
+			"cudb_oam_vip" : "10.170.23.245",
+			"cudb_psd" : "ericsson",
+			"node_id" : "22"
+		}
+	],
+	"upg_sc" : ["SC-1","SC-2"],
+	"upg_pl" : ["PL-3","PL-4"],
+	"dsgs" : ["DSG0","DSG1","DSG2","DSG3"],
+	"dsg_port":["15001","15011","15021","15031"],
+	"dsg_host":["pl0","ds1_0","ds2_0","ds3_0"],
+	"initial_load_estimated_time": 7200
+}
