@@ -1,2 +1,2 @@
 # little-tool
-little tool just for fun
+# Little tool just for fun
