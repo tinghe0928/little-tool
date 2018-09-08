@@ -1,0 +1,71 @@
+{
+	"nodes": [
+		{
+			"oam_vip": "10.170.58.236", 
+			"hw_type": "vCUDB_2CPU_6GB", 
+			"site_id": "2", 
+			"site_vip": "10.170.58.239", 
+			"node_id": "32", 
+			"sql_list": [
+				{
+					"sql_master": [{"server-id": "3201", "port": "15001"}, {"server-id": "3202", "port": "15002"}], 
+					"sql_access": [{"port": "15000"}, {"port": "15000"}], 
+					"dsgid": "0", 
+					"ds": "0", 
+					"num_of_blades": "2"
+					}, 
+				{
+					"sql_master": [{"server-id": "3201", "port": "15011"}, {"server-id": "3202", "port": "15012"}], 
+					"dsgid": "1", 
+					"ds": "1", 
+					"sql_access": [{"port": "15010"}, {"port": "15010"}]
+					}
+				]
+			}, 
+		{
+			"oam_vip": "Unknown", 
+			"hw_type": "vCUDB_2CPU_6GB", 
+			"site_id": "1", 
+			"site_vip": "10.170.58.252", 
+			"node_id": "31", 
+			"sql_list": [
+			    {
+				    "sql_master": [{"server-id": "3101", "port": "15001"}, {"server-id": "3102", "port": "15002"}], 
+					"sql_access": [{"port": "15000"}], 
+				    
+				
+					"dsgid": "0", 
+					"ds": "0", 
+					"num_of_blades": "2"
+				}, 
+				{
+					"sql_master": [{"server-id": "3101", "port": "15011"}, {"server-id": "3102", "port": "15012"}], 
+					"dsgid": "1", 
+					"ds": "1", 
+					"sql_access": [{"port": "15010"}]
+					}
+				]
+			}
+		], 
+	"deployment": [{"nodes": ["32"], "site": "2"}, {"nodes": ["31"], "site": "1"}]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

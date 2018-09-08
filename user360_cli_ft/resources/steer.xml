@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<steer>
+    <outputFolderPath>/var/data_analytic/report/output/</outputFolderPath>
+    <type>csv</type>
+    <reports>
+        <report>
+            <name>IMS_IMPI</name>
+            <sql>select * from USER_IMS_ImsImpi</sql>
+        </report>
+    </reports>
+</steer>

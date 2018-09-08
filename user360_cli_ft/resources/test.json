@@ -1,0 +1,17 @@
+{"nodes": [{"oam_vip": "10.170.58.236","hw_type": "vCUDB_2CPU_6GB","site_id": "2","site_vip": "10.170.58.239","node_id": "32","sql_list": [{"sql_master": [{"server-id": "3201", "port": "15001"}, {"server-id": "3202", "port": "15002"}],"sql_access": [{"port": "15000"}, {"port": "15000"}],"dsgid": "0","ds": "0","num_of_blades": "3"},{"sql_master": [{"server-id": "3201", "port": "15011"}, {"server-id": "3202", "port": "15012"}],"dsgid": "1","ds": "1","sql_access": [{"port": "15010"}, {"port": "15010"}]},{"sql_master": [{"server-id": "3201", "port": "15021"}, {"server-id": "3202", "port": "15022"}],"dsgid": "2","ds": "2","sql_access": [{"port": "15020"}, {"port": "15020"}]}]},{"oam_vip": "Unknown","hw_type": "vCUDB_2CPU_6GB","site_id": "1","site_vip": "10.170.58.252","node_id": "31","sql_list": [{"sql_master": [{"server-id": "3101", "port": "15001"}, {"server-id": "3102", "port": "15002"}],"sql_access": [{"port": "15000"}],"dsgid": "0","ds": "0","num_of_blades": "2"},{"sql_master": [{"server-id": "3101", "port": "15011"}, {"server-id": "3102", "port": "15012"}],"dsgid": "1","ds": "1","sql_access": [{"port": "15010"}]},{"sql_master": [{"server-id": "3201", "port": "15021"}, {"server-id": "3202", "port": "15022"}],"dsgid": "2","ds": "2","sql_access": [{"port": "15020"}]}]}],"deployment": [{"nodes": ["32"], "site": "2"}, {"nodes": ["31"], "site": "1"}]}
+[DEFAULTDSGNUMBERS]
+pl-3 = 1
+pl-4 = 3
+threshold = 1
+
+[UPGSITEINFOMATION]
+upgsiteid = 9999
+
+[DSGALLOCTABLE]
+pl-3 = DSG0
+pl-4 = DSG1 DSG2 DSG3
+
+[DSGREPLICATION]
+
+[CUDBPROMPTS]
+cudbprompts = #$

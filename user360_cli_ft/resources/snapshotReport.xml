@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<steer>
+    <outputFolderPath>/var/data_analytic/report/output/</outputFolderPath>
+    <type>csv</type>
+    <reports>
+        <report>
+            <name>TEST_USER360CLI_USER_EPS_EpsDynInf</name>
+            <sql>select * from USER_EPS_EpsDynInf limit 100</sql>
+        </report>
+    </reports>
+</steer>
