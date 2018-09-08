@@ -1,0 +1,72 @@
+{
+	"nodes": [
+		{
+			"oam_vip": "10.170.22.241", 
+			"hw_type": "EBS_GEP5", 
+			"site_id": "1", 
+			"site_vip": "10.170.22.245", 
+			"node_id": "21", 
+			"sql_list": [{"sql_master": [{"server-id": "2101", "port": "15001"}, {"server-id": "2102", "port": "15002"}], 
+			"sql_access": [{"port": "15000"}, {"port": "15000"}], 
+			"dsgid": "0", 
+			"ds": "0", 
+			"num_of_blades": "4"}, 
+		{
+			"sql_master": [{"server-id": "2101", "port": "15011"}, {"server-id": "2102", "port": "15012"}], 
+			"dsgid": "1", 
+			"ds": "1", 
+			"sql_access": [{"port": "15010"}, {"port": "15010"}]}, 
+		{
+			"sql_master": [{"server-id": "2101", "port": "15021"}, {"server-id": "2102", "port": "15022"}], 
+			"dsgid": "2", 
+			"ds": "2", 
+			"sql_access": [{"port": "15020"}, {"port": "15020"}]},
+		 {
+			 "sql_master": [{"server-id": "2101", "port": "15031"}, {"server-id": "2102", "port": "15032"}], 
+			 "dsgid": "3", 
+			 "ds": "3", 
+			 "sql_access": [{"port": "15030"}, {"port": "15030"}]}
+		 ]
+}, 
+		 {
+			 "oam_vip": "Unknown", 
+			 "hw_type": "EBS_GEP5", 
+			 "site_id": "2", 
+			 "site_vip": "10.170.23.245", 
+			 "node_id": "22", 
+			 "sql_list": [{"sql_master": [{"server-id": "2201", "port": "15001"}, {"server-id": "2202", "port": "15002"}], 
+			 "sql_access": [{"port": "15000"}], 
+			 "dsgid": "0", 
+			 "ds": "0", 
+			 "num_of_blades": "4"
+		 }, 
+		 {
+		 	"sql_master": [{"server-id": "2201", "port": "15011"}, {"server-id": "2202", "port": "15012"}], 
+		 	"dsgid": "1", 
+		 	"ds": "1", 
+		 	"sql_access": [{"port": "15010"}]}, {"sql_master": [{"server-id": "2201", "port": "15021"}, {"server-id": "2202", "port": "15022"}], 
+		 	"dsgid": "2", 
+		 	"ds": "2", 
+		 	"sql_access": [{"port": "15020"}]
+		 }, 
+		 {
+		 	"sql_master": [{"server-id": "2201", "port": "15031"}, {"server-id": "2202", "port": "15032"}], 
+		 	"dsgid": "3", 
+		 	"ds": "3", 
+		 	"sql_access": [{"port": "15030"}]
+		 	}
+		 	]
+		 	}
+		 	], 
+	"deployment": [ {"nodes": ["21"], "site": "1"}, {"nodes": ["22"], "site": "2"}]
+}
+
+
+
+
+
+
+
+
+
+

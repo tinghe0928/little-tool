@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mbeans xmlns="http://schemas.ericsson.com/mbean-batch/1.0">
+<!-- DR User360FreshDB -->
+	<mbean order=""
+		objectname="com.ericsson.dve:type=Factory,name=DataRepositoryFactory">
+		<invoke operation="createDataRepository">
+			<parameter order="0">
+				<name>Name</name>
+				<value>User360FreshDB</value>
+			</parameter>
+			<parameter order="1">
+				<name>Identity</name>
+				<value>65450</value>
+			</parameter>
+			<parameter order="2">
+				<name>Type</name>
+				<value>JDBC-MySQL</value>
+			</parameter>
+		</invoke>
+	</mbean>
+
+	<mbean order=""
+		objectname="com.ericsson.dve:type=Factory,name=ConnectionPoolFactory">
+		<invoke operation="createConnectionPool">
+			<parameter order="0">
+				<name>DataRepository</name>
+				<value>User360FreshDB</value>
+			</parameter>
+			<parameter order="1">
+				<name>ConnectionType</name>
+				<value>JDBC</value>
+			</parameter>
+		</invoke>
+	</mbean>
+
+	<mbean order=""
+		objectname="com.ericsson.dve:DataRepository=User360FreshDB,name=ConnectionPool">
+		<set>
+			
+			<attribute>
+				<name>IdleTimeout</name>
+				<value>1</value>
+			</attribute>
+			<attribute>
+				<name>BlockingTimeout</name>
+				<value>1000</value>
+			</attribute>
+			<attribute>
+				<name>MaxPoolSize</name>
+				<value>20</value>
+			</attribute>
+			<attribute>
+				<name>MinPoolSize</name>
+				<value>20</value>
+			</attribute>
+			<attribute>
+				<name>ConnectionFactoryInterface</name>
+				<value>javax.sql.DataSource</value>
+			</attribute>
+			<attribute>
+				<name>ConnectionInterface</name>
+				<value>java.sql.Connection</value>
+			</attribute>
+			<attribute>
+				<name>RarName</name>
+				<value>ResourceAdapterJDBC.rar</value>
+			</attribute>
+			<attribute>
+				<name>ConnectionUrl</name>
+				<description>Database Connection Url</description>
+				<value>jdbc:mysql://SC-2:3306/cudb_user_data</value>
+			</attribute>
+			<attribute>
+				<name>DriverClass</name>
+				<description>Database Driver Class (FQN)</description>
+				<value>com.mysql.jdbc.Driver</value>
+			</attribute>
+			<attribute>
+				<name>UserName</name>
+				<description>Database User Name</description>
+				<value>canal</value>
+			</attribute>
+			<attribute>
+				<name>StatementTimeout</name>
+				<description>Statement Timeout</description>
+				<value>0</value>
+			</attribute>
+			<attribute>
+				<name>ExceptionClassifierClass</name>
+				<description>Exception Classifier Class</description>
+				<value>com.ericsson.jdbc.classifier.NullException</value>
+			</attribute>
+		</set>
+	</mbean>
+
+	<mbean order=""
+		objectname="com.ericsson.dve:type=Factory,name=ConnectionPoolFactory">
+		<invoke operation="setConnectionPoolAttribute">
+			<parameter order="0">
+				<name>dataRepository</name>
+				<value>User360FreshDB</value>
+			</parameter>
+			<parameter order="1">
+				<name>attributeName</name>
+				<description>Database Password</description>
+				<value>Password</value>
+			</parameter>
+			<parameter order="2">
+				<name>attributeValue</name>
+				<value>canal</value>
+			</parameter>
+		</invoke>
+	</mbean>
+
+	<mbean order="" objectname="com.ericsson.dve:type=DataRepository,name=User360FreshDB">
+		<set>
+			<attribute>
+				<name>NETypes</name>
+				<type>java.util.LinkedHashSet</type>
+                <value>java.lang.Object{}</value>
+			</attribute>
+		</set>
+	</mbean>
+</mbeans>
